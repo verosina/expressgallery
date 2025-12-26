@@ -5,13 +5,16 @@ import { getFirestore, addDoc, collection }
 from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 // 🔴 REPLACE WITH YOUR FIREBASE CONFIG
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAGjOJeYfO9T7WoMlqRSdh1sFgJDhY5xss",
+  authDomain: "expressgallery.firebaseapp.com",
+  projectId: "expressgallery",
+  storageBucket: "expressgallery.firebasestorage.app",
+  messagingSenderId: "712598948196",
+  appId: "1:712598948196:web:9a2d703e2cea38814b9271",
+  measurementId: "G-VMLBJ105N9"
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -87,3 +90,4 @@ window.save = async () => {
   preview.src = img;
   gallery.appendChild(preview);
 };
+
