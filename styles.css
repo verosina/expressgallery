@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background: #f4d6c8;
+  text-align: center;
+  color: #4b2e2b;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  margin: 5px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  background: #d08c7c;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+canvas {
+  background: white;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+#gallery img {
+  width: 80px;
+  margin: 6px;
+  border-radius: 10px;
+}

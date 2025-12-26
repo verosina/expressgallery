@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ExpressGallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>ExpressGallery</h1>
+<p>Your feelings are colors that paint you</p>
+
+<!-- AUTH -->
+<div id="auth">
+  <input id="email" placeholder="Email" />
+  <input id="password" type="password" placeholder="Password" />
+  <button onclick="signUp()">Sign Up</button>
+  <button onclick="signIn()">Sign In</button>
+  <button onclick="guest()">Continue as Guest</button>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+  <p class="privacy">Your expressions are private and belong only to you.</p>
+
+  <textarea id="feeling" placeholder="Write what you feel..."></textarea>
+  <button onclick="express()">Express</button>
+
+  <canvas id="canvas" width="400" height="400"></canvas>
+
+  <button onclick="save()">Save to Gallery</button>
+
+  <h2>Your Gallery</h2>
+  <div id="gallery"></div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
